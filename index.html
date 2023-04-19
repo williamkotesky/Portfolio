@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>William Kotesky</title>
+    <link rel="stylesheet" href="./assets/css/styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,400;0,700;1,100&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <script src="./assets/js/app.js" defer></script>
+    <script
+      src="https://kit.fontawesome.com/bd07062ee4.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body class="bgLight" id="body">
+    <nav class="navBar navBar-justify">
+      <div class="bg-icons content-display">
+        <i class="fa-regular fa-moon bg-button"></i>
+      </div>
+      <div class="collapse-container">
+        <i class="fa-solid fa-bars"></i>
+      </div>
+
+      <div class="expand-container">
+        <ul class="expand-container-list">
+          <li><a href="#">Home</a></li>
+          <li><a href="#about">Sobre</a></li>
+          <li><a href="#knowledge">Conhecimentos</a></li>
+          <li><a href="#projects">Projetos</a></li>
+          <li><a href="#contact">Contato</a></li>
+        </ul>
+      </div>
+    </nav>
+    <div class="nav-space"></div>
+    <section class="home-section">
+      <nav class="navBar-hide" id="navBar-mobile">
+        <div class="expand-container-side">
+          <ul class="nav-item-list">
+            <li><a class="nav-item" href="#">Home</a></li>
+            <li><a class="nav-item" href="#about">Sobre</a></li>
+            <li><a class="nav-item" href="#knowledge">Conhecimentos</a></li>
+            <li><a class="nav-item" href="#projects">Projetos</a></li>
+            <li><a class="nav-item" href="#contact">Contato</a></li>
+          </ul>
+        </div>
+      </nav>
+      <div class="lampDiv">
+        <img
+          class="lampSvg"
+          src="./assets/images/bgswitchlight.svg"
+          alt="Uma corrente de puxar de lampadas retrô"
+          title="Clique para alternar em Dark ou Light Mode"
+        />
+      </div>
+      <div class="pageTitleAbsolute">
+        <div class="pageTitleRelative">
+          <!-- <img src="./assets/images/quadro.svg" alt="moldura de um quadro" class="quadro"> -->
+          <h1 class="main-title">
+            William Kotesky <br />
+            Desenvolvedor Web <br />
+            Frontend
+          </h1>
+        </div>
+      </div>
+      <div class="window">
+        <img
+          src="./assets/images/window.svg"
+          alt="Uma janela simples com um parapeito que comporta um relógio digital que exibe números verdes"
+          class="window-image"
+        />
+        <div class="time">
+          <span class="hour"></span>
+          <span class="colon visible">:</span>
+          <span class="minutes minutesMarginOff"></span>
+        </div>
+      </div>
+    </section>
+
+    <section class="about-section" id="about">
+      <div class="myself-photo">
+        <img
+          src="./assets/images/william.jpg"
+          alt="homem loiro, óculos, sorriso, camisa cor de chumbo"
+        />
+      </div>
+
+      <div class="about-p">
+        <h2>Sobre</h2>
+        <p>
+          Olá, meu nome é William Kotesky e sou um desenvolvedor web frontend
+          com fortes aspirações de me tornar fullstack em um futuro próximo.
+          Minha história é um pouco incomum, pois comecei minha jornada
+          estudando Engenharia Química na USP, mas percebi que isso não me fazia
+          feliz. Em busca de novos conhecimentos para melhorar meu currículo,
+          acabei descobrindo Python e sua lógica de programação, o que me
+          mostrou o caminho para um futuro promissor. Hoje, com o JavaScript,
+          tenho a capacidade de desenvolver páginas web e busco constantemente
+          melhorar minhas habilidades a cada dia.
+        </p>
+      </div>
+    </section>
+
+    <section class="knowledge-section" id="knowledge">
+      <h2>Conhecimentos</h2>
+      <div class="knowledge-container">
+        <div class="knowledge-grid">
+          <div><i class="icon-tec fa-brands fa-html5"></i></div>
+          <div><i class="icon-tec fa-brands fa-css3-alt"></i></div>
+          <div><i class="icon-tec fa-brands fa-square-js"></i></div>
+          <div><i class="icon-tec fa-brands fa-react"></i></div>
+          <div><i class="icon-tec fa-brands fa-bootstrap"></i></div>
+          <div><i class="icon-tec fa-brands fa-node-js"></i></div>
+          <div>
+            <img
+              src="./assets/images/typescript-svgrepo-com.svg"
+              alt="Logotipo do Typescript, um quadrado com as letras 'TS'."
+              class="icon-tec fa-brands svg-type"
+            />
+          </div>
+          <div><i class="icon-tec fa-solid fa-question"></i></div>
+        </div>
+
+        <div class="knowledge-about">
+          <p class="fa-html5-content content-display p-content">
+            HTML <br />
+            Domínio dos headings, tags normais e semânticas, atributos das tags
+            e uso completo dos forms. Regras semânticas, estruturas próprias do
+            HTML como o próprio form, tabelas, media, audio, video.
+          </p>
+          <p class="fa-css3-alt-content content-display p-content">
+            CSS <br />
+            Domínio dos diferentes seletores, especificidade, atributos de um
+            elemento em específico como suas dimensões, borda, padding, margin,
+            bem como as diferentes formas de se posicionar um elemento na tela
+            com os diversos tipos de display(relative/absolute/flexbox/grid)
+            além de ferramentas que auxiliam nisso, como overflow, z-index,
+            float, math functions. Domínio geral sob a formatação de textos,
+            tabelas, forms, botões, transições e animações bem como o uso de
+            variáveis e construção de componentes como dropbox, cards, carousel
+            e etc. Uso da responsividade com media queries, optando pelo mobile
+            first.
+          </p>
+          <p class="fa-square-js-content content-display p-content">
+            Javascript <br />
+            Tipos de variáveis e de declaração de variáveis, template strings,
+            operadores matemáticos e lógicos objeto math, objeto date, if/else,
+            operação ternária, switch/case, atribuição via desestruturação
+            (arrays e objetos), for, for in, for of, while, do while,
+            break/continue, try-catch-throw, try-catch-finally, setInterval,
+            setTimeout, strings e seus métodos. Propriedades das funções
+            (argumento/parâmetro, return, escopo, closures) e os diversos tipos
+            de funções. Arrays e seus métodos, incluindo filter, map, reduce,
+            forEach. Objetos e prototypes, getter/setter, métodos, heranças e
+            polimorfismo e orientação à objetos. Assíncrono, promises e seus
+            diferentes métodos, async/await, fetch API e axios. Javascript
+            Tooling - babel e webpack, ES6 modules - import/export.
+          </p>
+          <p class="fa-react-content content-display p-content">
+            ReactJS <br />
+            Estrutura geral do React - components e props, states e como o
+            framework lida com a renderização de elementos na página, JSX.
+            Hooks: useState, useEffect, useRef, useId, useContext.
+          </p>
+          <p class="fa-bootstrap-content content-display p-content">
+            Bootstrap <br />
+            Breakpoints, containers, grid, gutters e todos os outros elementos
+            de posicionamento. Customização completa de forms e seus tipos,
+            incluindo validação. Todos os componentes que o Bootstrap oferece,
+            bem como todos os helpers e utilities.
+          </p>
+          <p class="fa-node-js-content content-display p-content">
+            NodeJs <br />
+            Node modules básico, express básico e conexão simples com mongoDB.
+            NPM - instalação de pacotes, instalação de versões específicas de um
+            pacote, dependences/dev-dependences, mover os pacotes entre essas
+            dependencias, atualizar pacotes de versões major, patch e minor,
+            listar pacotes instalados, desinstalar items e mostrar aqules que
+            precisam de atualização.
+          </p>
+          <p class="svg-type-content content-display p-content">
+            Typescript <br />
+            Domínio dos diversos tipos que essa linguagem oferece: Any, void,
+            object, array, tuple, null, undefined, never, enum, unknown, união e
+            interseção de tipos, funções e classes como tipos, type alias, type
+            assertions, estrutura de tipos. Também toda a parte de classes,
+            modificadores public, private, protected, heranças, super, getters e
+            setters, atributos e métodos estáticos, construtor
+            privado/singleton, classes/métodos/atributos abstratos,
+            associação/agregação/composição entre classes e interfaces.
+          </p>
+          <p class="fa-question-content content-display p-content">
+            Outros <br />
+            O básico de Python: condicional, laços, funções, sequências,
+            strings. Excel intermediário. Inglês Avançado: Conversação, leitura
+            e escrita em inglês, familiaridade com vocabulário utilizado na
+            programação. React router dom, webpack, eslint e um pequeno contato
+            com mongoDB e Express. Photoshop básico.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="projects-section" id="projects">
+      <h2>Projetos</h2>
+      <div class="carousel">
+        <i class="fa-solid fa-chevron-left control"></i>
+        <div class="projects-gallery-container">
+          <div class="projects-gallery">
+            <div>
+              <a
+                href="https://nfl-info-br.netlify.app/"
+                target="_blank"
+                rel="noopener noreferrer"
+                title="Clique aqui para acessar"
+                ><img
+                  class="item current-item"
+                  src="./assets/images/nfl-br-info.png"
+                  alt="Imagem do site sobre NFL, detalhes verdes e fotos de jogadores de uniformes diversos em cores vermelho, branco e preto, cada um em uma notícia."
+              /></a>
+            </div>
+            <div>
+              <a
+                href="https://github.com/williamkotesky/Projeto-Agenda"
+                target="_blank"
+                rel="noopener noreferrer"
+                title="Clique aqui para acessar"
+                ><img
+                  class="item"
+                  src="./assets/images/projeto-agenda.png"
+                  alt="Foto do repositório do Github, cores escuras em destaque."
+              /></a>
+            </div>
+            <div>
+              <a
+                href="https://williamkotesky.github.io/exact-time/"
+                target="_blank"
+                rel="noopener noreferrer"
+                title="Clique aqui para acessar"
+                ><img
+                  class="item"
+                  src="./assets/images/exact-time.png"
+                  alt="Imagem do site de venda de relógios, preto com uma foto em destaque de um relógio de pulso cinza, fundo preto e números e ponteiros ciano brilhantes."
+              /></a>
+            </div>
+            <div>
+              <a
+                href="https://williamkotesky.github.io/dsmovie/"
+                target="_blank"
+                rel="noopener noreferrer"
+                title="Clique aqui para acessar"
+                ><img
+                  class="item"
+                  src="./assets/images/dsmovie.png"
+                  alt="Foto do site desmovies, detalhes em roxo e várias fotos menores de filmes diversos."
+              /></a>
+            </div>
+            <div>
+              <a
+                href="https://williamkotesky.github.io/boostrap-project-art/"
+                target="_blank"
+                rel="noopener noreferrer"
+                title="Clique aqui para acessar"
+                ><img
+                  class="item"
+                  src="./assets/images/art-boostrap.png"
+                  alt="Imagem do site de artes gráficas com destaque pra um grafite ciano e laranja."
+              /></a>
+            </div>
+            <div>
+              <a
+                href="#/projetos"
+                target="_self"
+                rel="noopener noreferrer"
+                title="Clique aqui para acessar"
+                ><img
+                  class="item"
+                  src="./assets/images/react-typescript.png"
+                  alt="Fundo preto com uma faixa cinza escrito 'Em breve!' em amarelo."
+              /></a>
+            </div>
+          </div>
+        </div>
+        <i class="fa-solid fa-chevron-right control"></i>
+      </div>
+
+      <div class="projects-about">
+        <div>
+          <p class="projects-p">
+            NFL <br />
+            Site | Repositório <br />
+            Um projeto feito com React.Js que simula um site sobre o mundo do
+            futebol americano da NFL. Existem nove páginas, contando com
+            endereços dinâmicos que exibem informações de itens clicados, como
+            notícias e detalhes sobre os times favoritos. Há como adicionar,
+            editar e excluir notícias e times, usando o Local Storage do
+            Javascript, funcionando como um banco de dados. Também há ligações
+            com API's que buscam informações como o calendário da semana e
+            estatísticas detalhadas dos times adicionados pelo usuário.
+          </p>
+        </div>
+        <div>
+          <p class="projects-p content-display">
+            Projeto Agenda <br />
+            Repositório <br />
+            Um projeto fullstack utilizando Node.Js, Express e MongoDB, funciona
+            como uma agenda onde o usuário adiciona as informações do contato,
+            edita e exclui, protegendo isso com cadastro e login, e senha
+            protegida no banco de dados. Muito útil para conhecer um pouco do
+            backend, mesmo que o foco seja front no momento, por isso o link é
+            apenas para o repositório do GitHub.
+          </p>
+        </div>
+        <div>
+          <p class="projects-p content-display">
+            Exact-time <br />
+            Site | Repositório <br />
+            Um site construído inteiramente utilizando o bootstrap com muitos
+            dos seus recursos e facilitadores. Inteiramente responsivo e feito
+            como mobile first, em uma estrutura e layout profissionais.
+          </p>
+        </div>
+        <div>
+          <p class="projects-p content-display">
+            Dsmovie <br />
+            Site | Repositório <br />
+            Primeiro projeto realizado, um site com cards de filmes e vários
+            detalhes. Possui uma página extra que mostra o layout das
+            informações de um filme quando clicado, mas só um exemplo estático.
+            Feito tendo o boostrap como apoio e totalmente responsivo.
+          </p>
+        </div>
+        <div>
+          <p class="projects-p content-display">
+            Art <br />
+            Site | Repositório <br />
+            Projeto menor usando alguns recursos do boostrap como treinamento,
+            responsivo e mobile first. Simula o site de um projeto de artes que
+            exibe o trabalho de grafiteiros.
+          </p>
+        </div>
+        <div>
+          <p class="projects-p content-display">
+            React + Typescript <br />
+            Um projeto em desenvolvimento, utiliza react, typescript, lslint,
+            react-router-dom, webpack e vários outros pacotes de apoio para a
+            construção de um site de e-commerce, do lado frontend.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact-section" id="contact">
+      <h2>Contato</h2>
+      <div class="contact-info">
+        <i class="fa-brands fa-github"></i
+        ><a
+          href="https://github.com/williamkotesky"
+          target="_blank"
+          rel="noopener noreferrer"
+          >github.com/williamkotesky</a
+        ><br />
+        <i class="fa-brands fa-linkedin"></i
+        ><a
+          href="https://www.linkedin.com/in/william-v-kotesky-4b29051a0/?original_referer="
+          target="_blank"
+          rel="noopener noreferrer"
+          >william-v-kotesky</a
+        ><br />
+        <i class="fa-solid fa-envelope"></i><span>williamkotesky@gmail.com</span
+        ><br />
+      </div>
+    </section>
+  </body>
+</html>

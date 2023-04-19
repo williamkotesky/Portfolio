@@ -675,11 +675,26 @@ h6 {
   height: 35%;
 }
 
-.projects-about p {
+.p-project-title {
+  font-weight: bold;
+}
+
+.p-project-links {
+  display: inline-block;
+  margin: 5px 0;
+}
+
+.projects-about p,
+.projects-about p a {
   text-align: center;
 }
 
-.bgDark .projects-about p {
+.projects-about p a {
+  color: var(--black);
+}
+
+.bgDark .projects-about p,
+.bgDark .projects-about p a {
   color: var(--darkMain);
 }
 

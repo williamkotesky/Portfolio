@@ -678,6 +678,10 @@ h6 {
   align-items: center;
 }
 
+.projects-section h2 {
+  margin-bottom: 1rem;
+}
+
 .carousel {
   height: 40%;
   width: 90%;
@@ -852,6 +856,15 @@ h6 {
   .projects-gallery div {
     flex: 0 0 100%;
   }
+
+  .p-project-links {
+    display: inline-block;
+    margin: 10px 0;
+  }
+
+  .carousel-buttons {
+    width: 75%;
+  }
 }
 
 @media (min-width: 992px) {
@@ -990,5 +1003,9 @@ h6 {
 
   .projects-gallery div {
     flex: 0 0 100%;
+  }
+
+  .projects-about {
+    width: 60%;
   }
 }

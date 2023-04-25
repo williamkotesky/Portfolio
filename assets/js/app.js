@@ -33,6 +33,8 @@ const tecnologyActiveIconClass = [
 const hour = document.querySelector(".hour");
 const colon = document.querySelector(".colon");
 const minutes = document.querySelector(".minutes");
+const windowSun = document.querySelector(".window-sun");
+const windowMoon = document.querySelector(".window-moon");
 
 const controls = document.querySelectorAll(".control");
 const items = document.querySelectorAll(".item");
@@ -127,6 +129,20 @@ function getTimeWatch(flag) {
   const timeMinutes = timeDate.slice(3, 5);
   return flag ? timeHours : timeMinutes;
 }
+
+function starWindow() {
+  const time = getTimeWatch(true);
+  if (time >= 6 && time < 18) {
+    windowMoon.classList.add("window-star-display");
+    windowSun.classList.remove("window-star-display");
+    return;
+  }
+  windowSun.classList.add("window-star-display");
+  windowMoon.classList.remove("window-star-display");
+  return;
+}
+
+starWindow();
 
 setInterval(() => {
   hour.innerHTML = getTimeWatch(true);

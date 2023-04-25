@@ -332,11 +332,31 @@ h6 {
   margin: 0 auto;
 }
 
-.window img {
-  height: var(--height);
-  width: var(--width);
+.window-image {
+  height: 100%;
+  width: 100%;
   z-index: 2;
   position: absolute;
+}
+
+.window-sun {
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  left: 67%;
+  top: 20%;
+}
+
+.window-moon {
+  width: 35px;
+  height: 35px;
+  position: absolute;
+  right: 69%;
+  top: 21%;
+}
+
+.window-star-display {
+  display: none;
 }
 
 .bgDark .window img {
@@ -423,7 +443,6 @@ h6 {
   padding: 0 2rem;
   margin: 0;
   text-align: justify;
-  text-justify: inter-word;
 }
 
 .bgDark .myself-photo img {
@@ -947,8 +966,8 @@ h6 {
   /*HOME SECTION*/
   .home-section {
     display: flex;
-    justify-content: center;
-    align-items: center;
+    justify-content: space-evenly;
+    align-items: flex-start;
   }
 
   .navBar-hide {
@@ -966,25 +985,23 @@ h6 {
   .pageTitleAbsolute {
     position: static;
     width: 30%;
+    margin-top: 50px;
   }
 
   .window {
-    position: static;
-    width: 40%;
-    height: 40%;
     margin: 0;
+    transform: translateX(-50%);
   }
 
   .window img {
     max-width: 100%;
     max-height: 100%;
-    position: static;
   }
 
-  .window .time {
+  /* .window .time {
     left: 67.2%;
     top: 63%;
-  }
+  } */
 
   /*ABOUT SECTION*/
   .myself-photo {
